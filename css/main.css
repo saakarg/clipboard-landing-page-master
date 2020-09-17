@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --greyishBlue: hsl(201, 11%, 66%);
+  --darkGreyishBlue: hsl(210, 10%, 33%);
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--darkGreyishBlue);
+}
+
+h2 {
+  font-size: 28px;
+  color: var(--darkGreyishBlue);
+}
+
+p {
+  color: var(--greyishBlue);
+  line-height: 33px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.cta {
+  padding: 1.2rem 4rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-radius: 4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.ios {
+  background: var(--strongCyan);
+  -webkit-box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15), 0 4px 17px rgba(38, 186, 164, 0.45);
+          box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15), 0 4px 17px rgba(38, 186, 164, 0.45);
+  margin-top: 45px;
+}
+
+.ios:hover {
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15), 0 4px 11px rgba(38, 186, 164, 0.45);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15), 0 4px 11px rgba(38, 186, 164, 0.45);
+}
+
+.mac {
+  background: var(--lightBlue);
+  -webkit-box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15), 0 4px 17px rgba(97, 115, 255, 0.45);
+          box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15), 0 4px 17px rgba(97, 115, 255, 0.45);
+}
+
+.mac:hover {
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15), 0 4px 11px rgba(97, 115, 255, 0.45);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15), 0 4px 11px rgba(97, 115, 255, 0.45);
+}
+
+.hero {
+  background: url(/images/bg-header-mobile.png) no-repeat;
+  background-size: contain;
+}
+
+.hero .hero-wrapper {
+  padding: 7.5rem 0;
+}
+
+.hero .hero-wrapper .hero-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-wrapper .hero-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.main-body .desktop-section .desktop-content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main-body .desktop-section .desktop-main .desktop-image {
+  width: 100%;
+}
+
+.main-body .desktop-section .desktop-main .desktop-image img {
+  width: 100%;
+}
+
+.main-body .desktop-section .desktop-main .list-items-div {
+  margin-top: 50px;
+}
+
+.main-body .desktop-section .desktop-main .list-items-div .list-item {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.main-body .ipad-section {
+  padding: 5rem 0;
+}
+
+.main-body .ipad-section .ipad-content {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.main-body .ipad-section .ipad-content p {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.main-body .ipad-section .ipad-image {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-body .ipad-section .ipad-image img {
+  width: 100%;
+}
+
+.main-body .cards-section {
+  padding: 0 1rem;
+}
+
+.main-body .cards-section .cards-content {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.main-body .cards-section .cards-div .card {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.main-body .cards-section .cards-div .card .icon {
+  margin-bottom: 30px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-body .companies {
+  padding: 4rem 0;
+}
+
+.main-body .companies .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.main-body .bottom-cta {
+  padding: 2rem 0 7.5rem;
+}
+
+.main-body .bottom-cta .bottom-content {
+  text-align: center;
+}
+
+footer {
+  background: #f6f7f9;
+  padding: 3rem 0;
+}
+
+footer .blocks .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 55px;
+}
+
+footer .blocks .first .footer-logo {
+  width: 65px;
+}
+
+footer .blocks .first .footer-logo img {
+  width: 100%;
+}
+
+footer .blocks .second {
+  margin-bottom: 45px;
+}
+
+footer .blocks .second ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .blocks .second ul li {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+footer .blocks .second ul li a {
+  font-size: 21px;
+}
+
+footer .blocks .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .blocks .last ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .blocks .last ul li {
+  margin-right: 25px;
+}
+
+footer .blocks .last ul li:last-child {
+  margin-right: 0;
+}
+
+footer .blocks .last ul li a {
+  font-size: 34px;
+}
+
+footer .blocks .second ul li a,
+footer .blocks .last ul li a {
+  color: var(--darkGreyishBlue);
+  text-decoration: none;
+}
+
+footer .blocks .second ul li a:hover,
+footer .blocks .last ul li a:hover {
+  color: var(--strongCyan);
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .cta {
+    padding: 1rem 2.75rem !important;
+  }
+  .ios {
+    margin-right: 25px;
+  }
+  .hero {
+    background: url(/images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+  }
+  .hero .hero-content p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .main-body .desktop-section .desktop-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-body .desktop-section .desktop-main .desktop-image {
+    position: relative;
+    left: -4.5rem;
+    max-width: 720px;
+  }
+  .main-body .desktop-section .desktop-main .list-items-div .list-item {
+    text-align: left;
+    max-width: 440px;
+  }
+  .main-body .cards-section .cards-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .main-body .cards-section .cards-div .card {
+    max-width: 409px;
+  }
+  .main-body .cards-section .cards-div .card .card-content p {
+    font-size: 16px;
+  }
+  .main-body .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .main-body .companies .company {
+    margin-bottom: 0;
+    display: block;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .blocks .first {
+    margin-bottom: 0;
+  }
+  footer .blocks .second {
+    margin-bottom: 0;
+  }
+  footer .blocks .second ul {
+    margin-bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 15px;
+  }
+  footer .blocks .second ul li {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1441px) {
+  .main-body .desktop-section .desktop-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --greyishBlue: hsl(201, 11%, 66%);
+  --darkGreyishBlue: hsl(210, 10%, 33%);
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+h1 {
+  font-size: 32px;
+  color: var(--darkGreyishBlue);
+}
+h2 {
+  font-size: 28px;
+  color: var(--darkGreyishBlue);
+}
+
+p {
+  color: var(--greyishBlue);
+  line-height: 33px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+// Common Elements
+
+.cta {
+  padding: 1.2rem 4rem;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-radius: 4rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.ios {
+  background: var(--strongCyan);
+  box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15),
+    0 4px 17px rgba(38, 186, 164, 0.45);
+  margin-top: 45px;
+
+  &:hover {
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+      0 4px 11px rgba(38, 186, 164, 0.45);
+  }
+}
+
+.mac {
+  background: var(--lightBlue);
+  box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15),
+    0 4px 17px rgba(97, 115, 255, 0.45);
+
+  &:hover {
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+      0 4px 11px rgba(97, 115, 255, 0.45);
+  }
+}
+
+// Hero Section
+
+.hero {
+  background: url(/images/bg-header-mobile.png) no-repeat;
+  background-size: contain;
+
+  .hero-wrapper {
+    padding: 7.5rem 0;
+
+    .hero-logo {
+      display: flex;
+      justify-content: center;
+    }
+    .hero-content {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+// Main Body Section
+
+.main-body {
+  // Desktop Section
+  .desktop-section {
+    .desktop-content {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .desktop-main {
+      .desktop-image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .list-items-div {
+        margin-top: 50px;
+
+        .list-item {
+          text-align: center;
+          margin-bottom: 45px;
+        }
+      }
+    }
+  }
+
+  // Ipad Section
+  .ipad-section {
+    padding: 5rem 0;
+
+    .ipad-content {
+      text-align: center;
+      margin-bottom: 70px;
+
+      p {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+    }
+
+    .ipad-image {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // Cards Section
+  .cards-section {
+    padding: 0 1rem;
+
+    .cards-content {
+      text-align: center;
+      margin-bottom: 120px;
+    }
+    .cards-div {
+      .card {
+        text-align: center;
+        margin-bottom: 80px;
+
+        .icon {
+          margin-bottom: 30px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  // Companies Section
+  .companies {
+    padding: 4rem 0;
+
+    .company {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+  }
+
+  // Bottom Section
+  .bottom-cta {
+    padding: 2rem 0 7.5rem;
+
+    .bottom-content {
+      text-align: center;
+    }
+  }
+}
+
+// Footer Section
+
+footer {
+  background: hsl(220, 18%, 97%);
+  padding: 3rem 0;
+
+  .blocks {
+    .first {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 55px;
+
+      .footer-logo {
+        width: 65px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .second {
+      margin-bottom: 45px;
+
+      ul {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+
+        li {
+          text-align: center;
+          margin-bottom: 15px;
+
+          a {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+    .last {
+      display: flex;
+      justify-content: center;
+
+      ul {
+        display: flex;
+
+        li {
+          margin-right: 25px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+    .second,
+    .last {
+      ul {
+        li {
+          a {
+            color: var(--darkGreyishBlue);
+            text-decoration: none;
+
+            &:hover {
+              color: var(--strongCyan);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .cta {
+    padding: 1rem 2.75rem !important;
+  }
+  .ios {
+    margin-right: 25px;
+  }
+
+  .hero {
+    background: url(/images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+
+    .hero-content {
+      p {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .main-body {
+    .desktop-section {
+      .desktop-main {
+        display: flex;
+
+        .desktop-image {
+          position: relative;
+          left: -4.5rem;
+          max-width: 720px;
+        }
+        .list-items-div {
+          .list-item {
+            text-align: left;
+            max-width: 440px;
+          }
+        }
+      }
+    }
+
+    .cards-section {
+      .cards-div {
+        display: flex;
+        justify-content: space-evenly;
+
+        .card {
+          max-width: 409px;
+
+          .card-content {
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .companies {
+      display: flex;
+      justify-content: space-evenly;
+
+      .company {
+        margin-bottom: 0;
+        display: block;
+      }
+    }
+  }
+
+  footer {
+    padding: 2rem 0;
+
+    .blocks {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .first {
+        margin-bottom: 0;
+      }
+
+      .second {
+        margin-bottom: 0;
+
+        ul {
+          margin-bottom: 0;
+          display: grid;
+          grid-template-rows: auto auto;
+          grid-template-columns: auto auto auto;
+          column-gap: 50px;
+          row-gap: 15px;
+
+          li {
+            text-align: left;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .main-body {
+    .desktop-section {
+      .desktop-main {
+        justify-content: center;
+      }
+    }
+  }
+}
